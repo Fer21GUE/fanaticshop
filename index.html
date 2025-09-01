@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FanaticShop | Inicio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>FanaticShop</h1>
+    <p class="tagline">La mejor tienda de ropa deportiva en linea</p>
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="ingreso.html">Ingreso</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="destacados">
+      <h2 id="destacados">Destacados</h2>
+
+      <article class="card">
+        <img class="img-grande" src="fotos/chaqueta alpinista.jpg" alt="Peto adulto amarillo fluo" />
+        <div>
+          <h3>Temporada invierto</h3>
+          <p>La temporada invierno para senderistas comenzo, preparate para las lluvias.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="img-grande" src="fotos/zapatillas-running-y-trail-hombre-kiprun-jf-190.jpg" alt="Descuentos" />
+        <div>
+          <h3>Ofertas!</h3>
+          <p>Zapatillas running con hasta un 40% de descuento!.</p>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="contacto">
+      <h2 id="contacto">Suscríbete a novedades</h2>
+      <form id="form-news" novalidate>
+        <div class="field">
+          <label for="newsEmail">Email</label>
+          <input id="newsEmail" name="email" type="text" />
+        </div>
+        <button class="btn" type="submit">Suscribirme</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 FanaticShop • contacto@Fanaticshop.cl</p>
+  </footer>
+</body>
+</html>

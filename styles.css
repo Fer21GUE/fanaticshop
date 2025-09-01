@@ -1,0 +1,151 @@
+/* ====== css ====== */
+:root{
+  --bg: #ffffff;       
+  --panel: #f8f9fa;    
+  --text: #000000;     
+  --muted: #555555;    
+  --brand: #22c55e;    
+  --card: #ffffff;     
+  --border: #dddddd;
+}
+
+*{box-sizing:border-box}
+
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.5;
+}
+
+img{
+  max-width:100%;
+  display:block;
+  border-radius:12px;
+}
+
+header,footer{
+  background:var(--panel);
+  border-bottom:1px solid var(--border);
+}
+
+header{padding:1rem 1.25rem}
+footer{padding:1.25rem;text-align:center}
+
+h1,h2,h3{margin:0 0 .5rem}
+h1{font-size:clamp(1.6rem,3vw,2rem)}
+h2{font-size:1.25rem;margin-top:1rem}
+p{margin:.5rem 0}
+
+.tagline{color:var(--muted);margin-top:.25rem}
+
+.menu{
+  list-style:none;
+  display:flex;
+  gap:.75rem;
+  padding:0;
+  margin:.75rem 0 0;
+}
+.menu a{
+  color:var(--text);
+  text-decoration:none;
+  padding:.4rem .6rem;
+  border-radius:.6rem;
+  border:1px solid transparent;
+}
+.menu a[aria-current="page"], 
+.menu a:hover{
+  border-color:var(--brand);
+}
+
+main{
+  max-width:1100px;
+  margin:0 auto;
+  padding:1rem;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1rem;
+}
+
+.row{display:flex;flex-wrap:wrap}
+.gap{gap:.5rem}
+.sr-only{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:.75rem;
+  display:flex;
+  gap:.75rem;
+  align-items:center;
+}
+
+.btn{
+  background:var(--brand);
+  color:black;
+  border:none;
+  border-radius:10px;
+  padding:.55rem .9rem;
+  cursor:pointer;
+  font-weight:600;
+}
+.btn:hover{filter:brightness(1.1)}
+
+.form{max-width:540px}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:.75rem;
+}
+.field input{
+  padding:.6rem .7rem;
+  border-radius:.6rem;
+  border:1px solid var(--border);
+  background:#ffffff;
+  color:#000000;
+}
+.field input:focus{
+  outline:none;
+  border-color:var(--brand);
+}
+
+.hint{color:var(--muted)}
+
+.img-grande {
+  width: 450px;
+  height: auto;
+}
+
+.img-pequena {
+  width: 150px;
+  height: auto;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 700px) {
+  .productos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

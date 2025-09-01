@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FanaticShop | Productos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Productos</h1>
+  <p class="tagline">La mejor tienda de ropa deportiva en linea</p>
+  <nav aria-label="Navegación principal">
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html" aria-current="page">Productos</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="ingreso.html">Ingreso</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section aria-labelledby="busqueda">
+    <h2 id="busqueda">Buscar</h2>
+    <form class="row gap" role="search" novalidate>
+      <label for="q" class="sr-only">Buscar producto</label>
+      <input id="q" name="q" type="text" placeholder="balón, zapatillas, polera..." list="sugerencias">
+      <datalist id="sugerencias">
+        <option value="balón"></option>
+        <option value="raqueta"></option>
+        <option value="zapatillas"></option>
+        <option value="guantes"></option>
+      </datalist>
+      <button class="btn" type="button" onclick="alert('Búsqueda de prueba')">Buscar</button>
+    </form>
+  </section>
+
+  <section aria-labelledby="lista">
+    <h2 id="lista">Lista</h2>
+    <div class="grid productos-grid">
+      <article class="card">
+        <img class="img-pequena" src="fotos/chaqueta alpinista.jpg" alt="Chaqueta impermeable de senderismo mujer MH100">
+        <div>
+          <h3>CHAQUETA IMPERMEABLE SENDERISMO MUJER MH100</h3>
+          <p>Disfruta de una comodidad óptima con un corte adaptado a todos los físicos.</p>
+          <p>$32.200</p>
+          <button class="btn">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="img-pequena" src="fotos/zapatillas-running-y-trail-hombre-kiprun-jf-190.jpg" alt="Zapatillas running y trail hombre Kiprun">
+        <div>
+          <h3>ZAPATILLAS RUNNING Y TRAIL HOMBRE KIPRUN JF 190 GRIP</h3>
+          <p>¡Pasa de la ruta al camino con facilidad!</p>
+          <p>$40.000</p>
+          <button class="btn">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="img-pequena" src="fotos/zapatillas-running-y-trail-hombre-kiprun-jf-190.jpg" alt="Zapatillas running y trail hombre Kiprun">
+        <div>
+          <h3>ZAPATILLAS RUNNING Y TRAIL HOMBRE KIPRUN JF 190 GRIP</h3>
+          <p>¡Pasa de la ruta al camino con facilidad!</p>
+          <p>$40.000</p>
+          <button class="btn">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="img-pequena" src="fotos/zapatillas-running-y-trail-hombre-kiprun-jf-190.jpg" alt="Zapatillas running y trail hombre Kiprun">
+        <div>
+          <h3>ZAPATILLAS RUNNING Y TRAIL HOMBRE KIPRUN JF 190 GRIP</h3>
+          <p>¡Pasa de la ruta al camino con facilidad!</p>
+          <p>$40.000</p>
+          <button class="btn">Agregar al carrito</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+<footer>
+  <p>© 2025 FanaticShop • contacto@Fanaticshop.cl</p>
+</footer>
+</body>
+</html>
